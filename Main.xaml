@@ -1,0 +1,253 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1008,1809" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="644,1744" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Microsoft Loop" sap:VirtualizedContainerService.HintSize="582,1633" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="b3da8cba-9d7a-4d43-927b-be0401edb936" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,1416" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="486,1305" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,1139" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3da8cba-9d7a-4d43-927b-be0401edb936" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://loop.microsoft.com/" CvElementArea="1319, 682, 38, 38" CvTextArea="1331, 691, 13, 17" CvTextArgument="?" CvType="Icon" DesignTimeRectangle="1328, 690, 20, 20" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl parentid='menu4' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='menu4' tag='svg' type='' class='___12fm75w f1w7gpdv fez10in fg4l7m0' aaname='' /&gt;" Guid="30840c15-4f55-46f4-880e-c40d84be2596" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADySURBVEhLzZbBCYQwEEXTjLJpwKMHsQErEO9WYAM2YAU2kDpiBdZhA7N8ISBhssm4ERQehBn5LzFBVWWhaRgGapqGtNZZQBYyka0wqOuavfEfkIlslXPmPshWXCMn7xCM40jWWjqOg3Bh3Pc9e69PVIBwBE/TRFVVnTWMUUuRRAXbtp0Svw4Jen7dJyrAxdWxGqyC612JCuZ5ZuvZBCGWZSFjDNu7ckvgNtlt+i/EAsx83/ekcCAStG2bPHOHSIANX9eV7YUQCfB4QqcqxK1NliASdF2X/A5yiAQ49yln/8q7HtEdnv9kPv7RL4vPg78tmr7SRZErl4o7WwAAAABJRU5ErkJggg==" InformativeScreenshot="3ce99ef542d37074f0ad23d7fc19390f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvElementArea="1319, 682, 38, 38" CvTextArea="1331, 691, 13, 17" CvTextArgument="?" CvType="Icon" DesignTimeRectangle="1322, 684, 32, 32" ElementType="Button" FriendlyName="'BUTTON menu4'" FullSelectorArgument="&lt;webctrl id='menu4' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='menu4' tag='BUTTON' type='button' class='fui-Button rsawnvh ___1zm6i50 f1sbtcvk fwiuce9 fdghr9 f15vdbe4 fwbmr0d f44c6la f1v1m5wo ffkjs4p fqcc129 f1ojgkho f1qltbhz f1u8i3ug f8fbkgy f1nfllo7 f1djnp8u f1s8kh49 f1euv43f ff8plos fy2oqeq f1nxs5xn' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMNSURBVFhHvZhNbhpBEIVzhRB5omQVHGwFFgglEkvkIATe2BJehCUCiR0n4AJcgBNwAc4BJ+AcXKDTX8+0e6apgWkYg/RU03/1itfVNQ2fKp8jVamkkGp/CWlrW7R9yuqA7nQjD0y8bdspVNBG0XfVav1R/f6zGo1GajKZqNlsZsDz6N/IjDGHuWadhfWT19ZIFKJx2lZ//DREEA+Hb6rb7ap2u62azaZqNBoGPNPH2HA4NHP7/YFeWzvyl2dPKmT39umpq6bTqXbeN6T1er0QmDsYDMxafOTlTprPyyEGXJtvxha8vLwGBeKDtfjAF0o7niwf7VyFHh/qJieQXyK5BPjCJ74zfBZOITqcRRkWdjod0fE1wCe+ZaU8heyecnrKVMYHvtk+KaeOcojkY78lR2UCDrh8/oxC1WrNnIhrErgo4IArLgkxfxJQHBmWOsPRlhxImM/narvdqsPhoPjwPB6PxbkS4KJOWf4kIN3QClFVKWRF1SEYAlksFqYY0sczfUWDggvOr0lFz+RQq/XbVGBpoYTdbmeC8vsJijG/Pw9UdF4zRwqxXSEni4/Uj1qoJI1JgBNuo1AcUBwZx9BKXwTL5VLsDw2I+XAfKUSxKuN0rVYrtdlsxDEJcMJtFErnEMnFG1taVBQ2qUOUhhPurEIa1waEMvv9PigY4AKK43jPoWu2rNfrBStj4bbMy6HQpE6DBF+v1+LYObik9nKIinnpC5Xtyjt15+COvZdDFKeQwlgW4IwLo1eHouibSa5L8ohqG/IOs4ALzvjHQEohex8JfblaUHdCao9F/HJ9NsrYON5zCHAVuP31g5ujjSGVQxa3vKD9NRc0x53JobTlGF564ooA3/ao+/yZHLL2Xt8cKVYfe8mvOV4Na0WFsI8Pv8zCMpXCFz7jn0Ey71EOpXH/IT8UtTKJf8nmKpS2Zf2UPseDFXNIsnwzagaFrNifDW9mLmtQOuNPQ2xrJApZMHC6TUWP/44ZmC0gJyAGPNNHENzRoztbgd36c/ZkDtnIy277Nj1eKIduZyP1H8kUd9yUoq4XAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enviar comentários'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3da8cba-9d7a-4d43-927b-be0401edb936" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://loop.microsoft.com/" CvTextArgument="Enviar comentarios" CvType="Text" DesignTimeRectangle="1197, 649, 121, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Enviar comentários'" FullSelectorArgument="&lt;webctrl aaname='Enviar comentários' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Enviar comentários' tag='SPAN' type='' class='fui-MenuItem__content ___7dw8ap0 f161knb0 f12huiiw f3rmtva fqerorx' check:innerText='Enviar comentários' /&gt;" Guid="775257b4-52f3-4ea6-b2a1-7c5f2551364b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAYCAYAAADXufLMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJwSURBVGhD7VbbcewgDE0725gnpbBt7LgFesiM/90OQcKyHsgPMrv348LHmayRgPOwIV+PxyMN9IUReocYoXeIEXqHGKF3iBF6hxihdwg39BDXtK4a8Vn3NeF7Tsu6pPnbqfWKZ8zeXnjyAd8OQ19eUzU+0I7ptaQ1BqcWUvyZ01SNfx4j9A/jMPRnSMGO/SM0hj6l+QeO+vyW7kc/Hz3BmcdjMEccU3i08fUh5xWjZtzr7PgLeW1eI7KJZm1lOtTyFxZgD6xv68s5VUhSr+R67ce+ZgZdkajPGd89em1ckIfxbduT5xt/8Drgunct37zTyVDakA3GXjqmNkP3IwsJUK8mH6INiZ+LKUaMQYB9RTjTKwcJv3Gt2qQ9qC1cet4DoLWqO7QEWgWD9Qs/MuovPc/JL7Sq7/1lL93v7CfryrtSl1xDS+jyy2PYRTNOgtWCdU3jbJ4DtadG8LjLl1H+BlQhG422PwP4lT2u/GjV4nkkxlzdkkP57WfHeHPo1hApwAjCefCVELh2aZQTRIHDDyA5VnOBlzRSr4FcFM8NyO+eH5UW4KDWo/6L0A90B5VX4cQcdS/g7aHjMxCjvzR++sZqsW1fh0bwuEsujaFj/yGXP4Ru91f9F6Ef6A5Zs+Igxj3u7w8de5YUI33xNC7IW+Hw3BL6xkP2NN3pLaFj3Tf1jh9Wi/t8N3RHd9Er5p/sRbj5jxyZdi0SoIUQHPK0fv6nToo9Iqth1qheIq6pl6859AzUKPYyOs79gPXLvNLHz8gta+d+6ZGcL8eMbof7XlM6GW7oA/83RugdYoTeIUboHWKE3iFG6B1ihN4dHukX9hMUVWh1kLQAAAAASUVORK5CYII=" InformativeScreenshot="f9798a73a998346140d58ef1d27137f8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvType="Icon" DesignTimeRectangle="1173, 649, 20, 20" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;svg' idx='3' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='___12fm75w f1w7gpdv fez10in fg4l7m0' tag='svg' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEwSURBVEhL7ZShroQwEEXf7+DxeDQejwYNGjQej8ejQfM783KaTLKvnW2bvKxbcbLtTIc73A77UxSFfJKvQJKkQF3XMo6j7Psu13U5WBMjZ9W8EhUYhkHu+5ZlWaRpGinL0sGa2Hme0ve9Wau8Fdi2zXVaVZWZB3Kc4ayVB1OAzim0chacpcbKBQL4ii2xzn04i13WnQQC0zQ5f3WP5/jMbyxGDbW6VwIBXpdL1D1Fz/NI13XRGDWWrYEA9vjd4m9OjFrdK0mBXLIFfItyybbIv2R8btv2zxngga+Xmn3JjBojp2PK/jgOWdfVCQFrYjqWOqbWaAcCYH1oPJgOwX8jzmZ/aMpH/yoUuuLV53l2njMpwJoYuXedK1EBwGdsoVPGEFgTi72dkhT4L1+BBIX8AvFlyw6kyAHnAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Tenho uma sugestão'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3da8cba-9d7a-4d43-927b-be0401edb936" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://loop.microsoft.com/" CvElementArea="510, 424, 304, 48" CvTextArea="549, 440, 167, 21" CvTextArgument="Tenho uma sugestao" CvType="Button" DesignTimeRectangle="551, 437, 164, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Tenho uma sugestão'" FullSelectorArgument="&lt;webctrl id='obf-OverallIdeaText' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='obf-OverallIdeaText' tag='DIV' type='' class='obf-FontSubtitle obf-OverallText' aaname='Tenho uma sugestão' check:innerText='Tenho uma sugestão' /&gt;" Guid="c9188a35-623a-462e-9e13-aca86433855e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKgAAAAcCAYAAAD1EPTXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANpSURBVHhe7ZbblaswDEWn6TQ2qSJrSkgaoAF+GVu2QY8jMCRzL8mSsvaPsfU8mHxdLpcpCM5KCDQ4NSHQ4NSEQINTEwINTk0INDg1IdDg1Pw/gX7fpzH97t/gWRBUZoHehmnDhunGDj5NCDTowLlBb0mO0zQ+ruDZiwiBvjV0oQ03+4zmWmz4yWvX6T4ev9xCoMEhPIFeHyMTJun0KR2FQINDuDfoi9kvUHaFk4336cqe5zeorBUfs+limEDl/1/nc/AjNiXrEXd9i0EjKSbLfc5b1advAzJVc0HVm61rgPZciVlzQv2gXtj6y/7FxsdtvX5mLeaM6XfNw6xnW3LUOaA8sX+8b59Aq9OlmDo4PWgy1tg6dOGPCWHNX6Y0UxbQ4pjGCnYKNBtba3HH9GiJUwWlfObzIhdUswH0OfW4+Sk59Qm05Mr3spdK5Ap6rOcK/cs8KJ7pa6oHzg6c7ZznDoE6w66DkE21bwMlxZP3BqibQ/usv4zxadgrUBWnvURAjGnRCkdBMUDsmZXaMt0Cdf2AlwmIL8P7QXFX+9pRW0PntnOe/QLdaELb6xVnmu35o/W0kwvea5bT7IWdAjVx0IsKaplht1YzL3eiCgj6Womj6t7Mh9XvCUv4IP94X2NVoO08s6Pz7BcoCMrtrwSK3qoZUJDk3wmU/Km9q7nPSFHzTxyKQ6i6/Ti6fvACCdPzaWZzoJi6r/MZ6+foPF9wg0peLVDPH7EpUKeRbZ35xXE6BerksToMQPHL4pFfK47jAvX74dNELeuzfmws4sl57vgPioel8RIwQ+0U6JoIewSA95Ra+DrO+xmB2hg9iME7tdMevu71qPaSi8bk3kWphd/uvQIt8djZnfPcIVAQjEiJDVuDBo3pFWjCDCRR/OFCBdQQWUvxlxe38u4UaM15K4YhnRuEbx0PiLzWkxZZ7e2W48Jra3mZiwb4zCS/refXxyD7CkRlepAoNdu+0OrBee4SKDE3aDEeHA/aGyoQGBBoppznJpuzhj6bfVOTWJ44706BZlRfUAwDG2Az03O9J4sNCEYIkiw/x7ea3ZtM90IYmFMTOlnrhfKbfT45T0egwWdQBAMvmjchBPrJOLfXOxEC/QjS59b5e2I/7+9FCPQjAP8pk73zp70RAg1OTQg0ODUh0ODEXKZfEwZVEXal4WwAAAAASUVORK5CYII=" InformativeScreenshot="2b36764f43deb1cb66dfbe5aaac41ac0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvElementArea="510, 424, 304, 48" CvTextArea="549, 440, 167, 21" CvTextArgument="Tenho uma sugestao" CvType="Button" DesignTimeRectangle="511, 426, 300, 45" ElementType="Button" FriendlyName="'Tenho uma sugestão'" FullSelectorArgument="&lt;webctrl id='obf-OverallIdeaAnchor' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='obf-OverallIdeaAnchor' tag='BUTTON' type='button' class='obf-OverallAnchor obf-TextAlignLeft' aaname='Tenho uma sugestão' check:innerText='Tenho uma sugestão' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'O que você sugere?'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b3da8cba-9d7a-4d43-927b-be0401edb936" Text="Dear Developers,&#xD;&#xA;I am writing to suggest a new feature that I believe would greatly enhance the functionality of your software. Specifically, I would like to request the ability to draw with a pen, if possible on different layers, similar to the way it is possible in Microsoft OneNote.&#xD;&#xA;&#xD;&#xA;As someone who will frequently uses your software for artistic and creative purposes, I have found that the current typing in containers is so good but this tools can be limiting. With the ability to draw on different layers, would be an amazing way to create complex anotations and designs for ideas that we users have. However, if you were to add this feature, it would greatly improve the overall usability and flexibility of your software.&#xD;&#xA;&#xD;&#xA;I understand that adding a new feature like this can take time and resources, but I truly believe that it would be a worthwhile investment. I'm sure that many other users would appreciate this feature as well, and it could potentially attract new users that likes it." Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://loop.microsoft.com/" CvType="InputBox" DesignTimeRectangle="751, 328, 300, 120" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'TEXTAREA obf-BasicFormC…'" FullSelectorArgument="&lt;webctrl id='obf-BasicFormComment' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='obf-BasicFormComment' tag='TEXTAREA' type='' class='obf-FontSubText obf-FormComment obf-TextInput' aaname='O que você sugere?' /&gt;" Guid="2ef27c4a-5f07-4362-8332-70c62bc34ccd" ImageBase64="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" InformativeScreenshot="e8110198d79ac6dbf4b2a5e6bad6bc62.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArgument="que voce sugere?" CvType="Text" DesignTimeRectangle="751, 268, 300, 60" ElementType="Text" FriendlyName="'O que você sugere?'" FullSelectorArgument="&lt;webctrl id='obf-BasicFormQuestionMiddleText' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='obf-BasicFormQuestionMiddleText' tag='LABEL' type='' class='obf-FontSubtitle obf-TextAlignLeft obf-FormQuestionMiddleText' aaname='O que você sugere?' check:innerText='O que você sugere?' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAABACAYAAACdriuGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATISURBVHhe7dndUeMwFIZhLndhL7ikIKqgB1IDLZBGGPpgxmWEIpjxWpZk6+ccW05ChkPeZ0aTtePIsvD5Imdvbu/+9X+H5l/vwuu87f5db1/yNbZym/bj2m3j9ne+xra2LbQ/yvY5X2Mrt6+z3Srb7a83Ly8vPY1Go1lsNz0AGEWAATCLAANgFgEGwCwCDIBZBBgAswgwAGYRYADMIsAAmEWAATCLAANgFgEGwCwCDIBZBBgAswgwAGYRYADMIsAAmEWAATCLAANgFgEGwCwCDIBZBBgAswgwAGYRYADMIsAAmEWAATCLAANglhJgh/79+bF/fMzb/iO8jQZxDvd9F/ZcpY99cR9d+XzgrOoAizfca3Gbfb73O7f/+X0oTaxy8zjM4eFtV8/l1RhC/DW/X7pXQgznkwdYCKndmxZRXb+Xwg0FN0+xSP1KjNVrMN5ju/79M2wDJ8gCbPx2XFthjSs0bsBFn4dqDg/DPgy4f3BGSYD51ZW++opajxuK1j0+uRVbaLu3zv8uNK3gwu9EwopOC1P/CDK35ZWN3r9USOV49UedsBJNWj4f5fuNj0zx8b363DnmSfu7rYx1WjGFMRR91H/jsv9UOBcreJzJHGDh8XH9UWchFBK+gNJimAtg/uyWwgzHpvtCwS+N2RdYHSB5/3Fs+XH+GorVQvwtMB3zsG8fCze8nxZyPRcCIVC71/iZE+dp6CWGVBYwLWMdj9n1u+d61SQfq4RYeG/tvgG2+J4ACzd9/ZhQfgNvKEzl0aMu4IJ4XX4c076xbylgyvGtX7s8Hn++pdXJGLTqdWydJ+FahHBpGqvwuZFyv8hfGA33DHCEowPsuGJsD4SyuMZt4ThthZVaK3Ktbyfrf3WOimCcNBTwOCbtmI3zJM59GaKNY10KKuk80hfN2If0hQac5ujfwJaCTi+iYwMsHDecV27LAZYXVfsYnCzApOJMhWKXxzg05RyT7PPpNW2cJ/E8xd+3daxK+IznlT43NinAlu8Z4BhJgC0FT6JYvUjaV2DhnKuFqR/XJileoSCX+q5XYAsBFs5zeqGGeUrO1TZPGwKsdazKNet/Y+BysgCL35T6KqwsAoW2Ugn9pwVWBpXnz5Puz4LkCLHgOqHw9L7LQFi7/qUA2SoPmJPnafybpGNvHKsW2murUeAC8gBzwo1e3dhC+OjiCiItpLiv6KMqrFCs7risYOtiHQ2fb1rxxPEPrT5eGm8cRxEGwnhd39P/QkrvD+b/UZQd3vZ5GIz9JAFx0jyFfeW4WsaqBZgyZ9lcTML5zxLswKwOsFESNlPb+m1b9uE+H/YVN7JfNczHuoCRVxzCuKpjNErBJaZAWOs7CUPfirmp3q9DolTOgTTf7fM0B5Zv7pr9vmoca2NVA8yr5kycXwIM30MJsO8iBxguwYdI02oVMIIAuxblIynwCxBgv4175CvnNzwmrj3GAtYQYL9O+fuXbzw64je6cIABwPkQYADMIsAAmEWAATCLAANgFgEGwCwCDIBZBBgAswgwAGYRYADMIsAAmEWAATCLAANgFgEGwCwCDIBZBBgAs6YA+/r66ruu65+envqHh4f+/v6eRqPRfkRzmeSyyWWUy6poCjD3BsFFo9F+cnMZ5bLK6/v/Hnd/wtEa2kQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3da8cba-9d7a-4d43-927b-be0401edb936" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://loop.microsoft.com/" CvType="CheckBox" DesignTimeRectangle="755, 477, 13, 13" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='obf-EmailCheckBox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='obf-EmailCheckBox' tag='INPUT' type='checkbox' class='obf-FormEmailCheckBox obf-CheckBox' aaname='Vocês podem me contatar sobre este comentário' /&gt;" Guid="eb9500b2-6464-4921-b8d9-f2f12904b9f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABRSURBVDhPY/hPBUBdQ168ePF/2rRp/8vKyghikDqQehiAGwKSOHbsGJSHH4DUgdTDANwQkA2kAGT1o4ZAwKghmACrIVRJsVTJO5QAKhjy/z8A9NU4VYTW/bQAAAAASUVORK5CYII=" InformativeScreenshot="594c0caf3dbac44dc7b2898b7c1e865c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="774, 474, 270, 48" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Vocês podem me contatar sobre este comentário' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Vocês podem me contatar sobre este comentário' tag='LABEL' type='' class='obf-FontSubText obf-TextAlignLeft obf-FormEmailLabel' check:innerText='Vocês podem me contatar sobre este comentário' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'unchecked'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b3da8cba-9d7a-4d43-927b-be0401edb936" Text="leoipy16@gmail.com" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://loop.microsoft.com/" CvElementArea="750, 521, 302, 32" CvTextArea="761, 531, 99, 16" CvTextArgument="Email (opcional)" CvType="InputBox" DesignTimeRectangle="751, 522, 300, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT obf-BasicFormEmai…'" FullSelectorArgument="&lt;webctrl id='obf-BasicFormEmailInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='obf-BasicFormEmailInput' tag='INPUT' type='text' class='obf-FontSubText obf-FormEmailInput obf-TextInput' aaname='' /&gt;" Guid="99453464-1d4c-45f7-b60f-a2f05ca2590a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAiCAYAAADYkoXXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL6SURBVHhe7ZgxriIxEET30mSEkBGSEXIByEiJCLkBF4CIkGRW9aVCTeMZ+LuAxsxr6ckYl9vukbo08KchCIKoNDAwgiCqjauBrVYrAIAqcNwY2OVyAQDoNRgYAFQLBgYA1YKBAUC1YGAAUC0YGABUCwYGANWCgQFAtWBgAFAtGBgAVMtLDGy5XDaj0eiG/X5f1P4POkfo8+l0amazWXM4HO50RneYTqc/2tL6K1BunfGOejOx5vgsAIbKywxss9kU197FIwN7xuBqI9Z0Pp+b+Xz+EeME6Ctfa2C6z7e9oeSav7FGgN/wVgPzW8J2u/35maWfltL6e83H4/GNCalJrRXSSa+12LBdBlZ6O4lnls51bo3WZHOQXvu8Lm3pLH22JufRmvTr9bq4nu8ZfwLnmjVq7nWAofEyA3PDxaZzM3ou9Dmah/bmBrcZWO/5swaW13yPfE40BxuXxrjHc+WaTCbXnNq32+3uDExjrC/n0Xo8RzrpvV9zGX5pb66r6xkADIGPvIG5OUXJsKSR1t9FYm6N3tvVvFpTTo2aSyOt5yLfLeY28W7xHpGcp6SLeUr1tuUWXTXnswGGxscNTLqozQ3tPfGNzvquZo5kAyuZhoj3jrmNci8Wi+Z4PN7VYWKNpXpFNNDSXfLz0zzW31Zz23kAQ6FXBlbSx9wa25o5kteigUSdcvmsmNvEuz1bY0mn82WE0sacXo978v54r5KBKW/pGQAMgV4ZWG5QzfU/lfVdzRzJ53ruvUJr+T+w+N+Vz3YOjXn9X/8Dc72aCz+/R/fONWssGTPAUHiZgcWfPKLUkELfu5lFbmitOYcMRGvWa3zGwETUCt8l5o6NL73eZqLG5xrd1WtC81KNWRfz5HqFDSzvlRHqTm01SxtrBBgaLzGwPvLI4DLZ8PpOyTgBhsbXGphQc+c3rTZqMzDdlbcvGDpfbWC/oTYDAwAMDAAqBgMDgGrBwACgWjAwAKgWDAwAqqXVwAAAasBxNTCCIIjaAgMjCKLSaJq/7RQH8Zq1nmgAAAAASUVORK5CYII=" InformativeScreenshot="73c5d6220072669e6be2b00ba540c8ee.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="774, 474, 270, 48" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Vocês podem me contatar sobre este comentário' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Vocês podem me contatar sobre este comentário' tag='LABEL' type='' class='obf-FontSubText obf-TextAlignLeft obf-FormEmailLabel' check:innerText='Vocês podem me contatar sobre este comentário' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enviar'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3da8cba-9d7a-4d43-927b-be0401edb936" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://loop.microsoft.com/" CvElementArea="879, 653, 121, 33" CvTextArea="921, 664, 40, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="881, 654, 120, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Enviar'" FullSelectorArgument="&lt;webctrl id='obf-BasicFormSubmitButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='obf-BasicFormSubmitButton' tag='BUTTON' type='' class='obf-SubmitButton' aaname='Enviar' check:innerText='Enviar' /&gt;" Guid="c863ae42-77c2-4546-ab67-08e7fa2a0620" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAkCAYAAABLw14kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFuSURBVHhe7ZZNasMwGAV7g96ud8l1Qq5hCr5CVoYsTZYhi3jlxVfr5ymycFpKFkZ6b2BoYktuyyDJHyaoUHAyUvCvz2/ZsEDBSQQKTiJQcBKBgpMIFJxEoOAkAgUnESg4iUDBSQQKTiJQcBJBfcEPN3vEvzlxv9lxa+w/7IblOcN1814LgkqDT9Zt3ZMvBQpOImgr+Gny23vXz/G/WsA2vTUvu3Z0c9KWfrHzPc735POuNtps5375XY5KjgHQxBn+6C/hnguef49jx5ObGyKGz0F3bmPsKvgyb8Qz4rz0TB98obLzHjS5wvMXuJdRsVIPYdz63trf5tUioAoeYsW5bmwWuAzu39pzFHwn3woevrttHT9xPQ9eztEK39M3g4eVPT1XevQZtTzr4wucgu+kD16SbdN/BffBymvFKnbPScw2DlrhsjKBgpMIFJxEoOAkAgUnESg4iUDBSQQKTiJQcBKBgpMIUnDBgYJTYfYDQlOi5uShL1AAAAAASUVORK5CYII=" InformativeScreenshot="1d40e31b2e6a84a9f9f22043ffc519d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Fechar'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3da8cba-9d7a-4d43-927b-be0401edb936" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://loop.microsoft.com/" CvElementArea="585, 459, 128, 38" CvTextArea="628, 472, 43, 13" CvTextArgument="Fechar" CvType="Button" DesignTimeRectangle="590, 462, 120, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Fechar'" FullSelectorArgument="&lt;webctrl id='obf-ThanksPanelCloseButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='obf-ThanksPanelCloseButton' tag='BUTTON' type='button' class='obf-SubmitButton' aaname='Fechar' check:innerText='Fechar' /&gt;" Guid="ad81b802-20cc-4de2-a04f-ed34983bef66" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAkCAYAAABLw14kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHxSURBVHhe7Zw9bgIxEEa5QQ7Cechd6DgLouIOKBJXAAokSkSJKKCicHbsGTOYCUEkSNjzfdIrWI932X3rHyElvS7BQme5XJo1/X6fK1Km06lZNxgMuCJlNBqZdXRch/pZdXQdHfoeVt1qteKKFKuG0Kn1Xul761g1jHmQu6W0/hB03Aj//PgCDQPhzoBwZ0C4M7JwXuPNItAOEgh3ggTCnSCBcCdIsGlzQt60QbgPINwZEO6M+oRPTrztUFnv7NqH2ITFIYTtxGprjzqFH/ZhbLU9hVPhPFbMorcCwv+EpBnh4/mZ74RyCjPdPtyHI7dQjvNNd1yE78KWj4dwDouh6lcsI6kftXHfOZ/3X1/E1yBpQniUrdriZ1nfo2wtchcWSrh+OWbr7qM6z2ytXpwoXz5z3wpEC5K6hBdJ07E1NdOoTXJI4mVkaox+8eUoZocMnVNeHOua742kgU2bnpJ1SM49MQ8IL5aCy5Rfn/C8aatfOD38Yu1VPD3Cb0Z73SO8IeG3a/gVcSnQL8T1Gv6j8PJ6V+eB8NdzRzgRN1w6+keZKOuSJOoX4dye023gMMJBNUC4M7JwnrDMItAOEgh3ggTCnSCBcCdIsGlzQt60QbgPINwZEO6MG+ElOrX+kTz+A4SJeZC7pbT+EHTavtde+AZW8iZT9lmXDgAAAABJRU5ErkJggg==" InformativeScreenshot="1d5b6d7edf6fd3d070059412b2ba8001.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="1 =1" />
+              </ui:InterruptibleDoWhile.Condition>
+            </ui:InterruptibleDoWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAolJREFUOE/V031PUlEcB3BfAi/Bl+JLsKVJmIkgPoJeFURE4OIDlbXA1WptNcoenVtu1VzatHQ+DYwjSqhgXdPKclFmNR/649s5cC4Xw+pvv9v563fuZ9977j05RzdiE8lzNr30uSwhyWkJwWElsLeFiV2M+K0iyeXb/h9RICqXlXidFHDaCNpa52C3h2F3zKPVvQBb5yu0eKJoPr/kFbxExR87PAyjbYijhUMMcS2gtT2ShKwMOrcIy4UlmC8uw9wTJ/9E201Br9gwC2dzKAU652HriMB69iDU1BND46U4Gq6+hnBN8vLHD+aM9nluR+U03MYAkqg1RBuGk2Bz9yLMPoow6PIKh96g/roEk38VxttSHmeUeMombnbpp9BRNQO3KQBX4ywc9AxtYlgURKJiryZciQsMqqNQHYNuvUXt3XXU3Fv3cUZJl26S0IWucopWc9QcFPg4HeMNSTT1UujOGmoevENV/wdUDmxIfKyEYR7dFDJR9pH4OB3BL6kYVJ2CYHj8CeWDm+BjJQxLganVaZjO3kSjHZBUFRSq4JBu+DPKRhOHgwxKo/Q8+ehADE8T9XoZGkmgdOwrTk9+I3ysRG7GIHnxUTICbaYbSrhkSJuEtlAys43i2R9+vk2JjHgywNLeKMr6V6F/sgF9ZqOJNATN3E+oyU72VZQRedmESRTfX0TpozVon21C+yIDCn6HhlBoYQdFkd3sX4blT7CyO4CTD2M4NfQeJeNfUDLNGinQieguCpf3ST7B4VcvE6uwDqOgLwz1oATN2CaKA9tKIwbF9nE8tu/Ll/6CsbgNE7DUjkLTPYJjfQSFgysoGv8IdXAL6jDFonu00Z7EoIL4r+yrdkSSk/Mbhm1CuCaW6bEAAAAASUVORK5CYII=" InformativeScreenshot="2f83667d897a270bdf9c403501aa1235.jpg" Selector="&lt;html app='chrome.exe' title='Microsoft Loop' /&gt;" Title="Microsoft Loop" Url="https://loop.microsoft.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
